@@ -1,0 +1,35 @@
+3.1
+The graph that is best for this problem is a undirected weighted graph. This will be implemented by creating
+two graphs. The first undirected weighted graph will consist the start city and each city it can travel to from there.
+Each node will represent a city. Each edge will be the distance traveled multiplied by fuel cost. The graph is 
+undirected because it is able to trace back through a city.  
+
+The second graph will be executed when each city node is reached. This will go through the coordinate system of the 
+restaurants and find which of the three options are possible. Of all the possible options the menu options
+that have not already chosen will be edge values. Then it will find the cheapest food option that has not
+already been selected. Each node will be a location and each edge will be the cost of a meal. if a meal has been
+selected then that edge value is removed. This will ensure the cheapest possible meal is always chosen by combining
+them.
+
+However upon further analysis every single city has all three of the restaurants present. this makes the problem
+algorithmically simpler. The way meals will be implemented is that the menu array will be sorted in price order
+from lowest to highest. Then the first available meal will be chosen at each location and be added to edge weight. 
+The only consideration the algorithm will need for shortest path is how many stops are made. This is the only this
+that will affect food cost. 
+
+BFS and DFS are two different graph searching algorithms that search graphs. Once the graphs have been created
+BFS and DFS will search for the end node. These cannot return shortest path however. dikstras algorithm will
+be implemented to find the shortest path as it is the easiest to code. 
+
+3.2
+They did not return the same result. BFS found the result in fewer steps. This will remain true if the number increases.
+This is because DFS works by always looking for the end of the tree when exploring. As more nodes are added DFS will have
+more nodes to explore to reach the end. BFS looks for closer nodes rather than reaching the end. This means it will always
+operate faster than DFS as more cities are appended to the end. This is not the shortest path when weights are taken into
+account but it has the least steps to reach this point. 
+
+3.4
+The shortest path algorithm is implemented using dikstras algorithm. The complexity of this algorithm is ElogV.
+This value is obtained from researching the run time of dikstra's algorithm from the textbook algorithms 4th edition.
+The run time of this will not change if more stops or restaurants are added. This algorithm will always run proportional 
+to vertices and edges so adding more does not change the proportion amount. 

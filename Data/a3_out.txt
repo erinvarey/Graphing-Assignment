@@ -1,0 +1,11 @@
+[New York, Pittsburgh, Columbus, Chicago, Saint Louis, Memphis, Oklahoma City, Albuquerque, Las Vegas, Denver]
+[New York, Pittsburgh, Columbus, Indianapolis, Saint Louis, Kansas City, Denver]
+    -              -
+Pittsburgh     Big Mac - Meal                                           $0.0           $29.62         $29.62
+Columbus       Chicken McNuggets  Meal (10 Pc.)                         $3.79          $15.54         $48.95
+Indianapolis   Bacon & Cheese Quarter Pounder - Meal                    $4.38          $14.29         $67.62
+Saint Louis    Double Quarter Pounder with Cheese - Meal                $5.49          $19.93         $93.04
+Kansas City    Whopper - Meal                                           $5.49          $19.91         $118.44
+Denver         Dave's Hot 'n Juicy 1/4 lb. Single with Cheese - Combo   $5.49          $48.45         $172.38
+                                                                        ------         --------       --------
+                                                                        $24.64         $147.74        $172.38

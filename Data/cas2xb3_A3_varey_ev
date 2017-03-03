@@ -1,0 +1,31 @@
+SFWR ENG 2XB3
+Erin Varey
+1400605
+This is my own individual work - march 22nd 2016
+Design decision and Assumptions:
+
+The longitude and latitude values are not correct for the USA. In order to keep my assignment correct without
+making major modifications I'm assuming this is an imaginary USA and the given longitude and latitude coordinates
+are correct. The spelling of pittsburgh has been changed in zips.1990 to keep the spelling consistent between
+that and the connected cities file. New York City is changed to New york to maintain consistency between files
+St. Louis is changed to Saint Louis in connected cities to maintain consistency. The state for Washington is changed
+to MD versus DC in zips 1990 to maintain consistency with the gas price files. These changes are all minor and don't
+affect format it just makes the data match with what it should be.
+
+While testing code it was noticed that every single city has all three restaurants within 0.5 lat/long
+Methods were created to test/prove this. This changed the way the shortest path was implemented. 
+
+The j-unit test was modeled after Joe's post in the Software Engineering group. 
+""For your Junit design it is sufficient if you check either for DFS or BFS returned route:
+
+1) Every adjacent vertices in the computed route sequence are connected by an edge.
+2) The vertices are distinct.
+Alternatively in your JUnit design you can pick a random pair of cities (A and B) and do an exhaustive search for
+ all possible routes between A and B (Note that in a general case this is a hard problem but for the limited number
+  of cities in this assignment you can do it) and then check if the results of your DFS or BFS search are among those paths.
+  
+ The first option is the one being used where get edge length is called for the two cities
+ and the vertices are checked to be distinct. 
+ 
+ dikstras method was used for the shortest path. portions of this code an its methods were obtained
+ from the Princeton 4th edition textbook. 
